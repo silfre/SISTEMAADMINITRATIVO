@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #8b8088;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* CONTENEDOR DE TODOS LOS BOTONES */
+.contenedor-botones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+/* CADA BOTÓN COMPLETO */
+.boton-menu {
+    width: 230px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
+    user-select: none;
+    appearance: none;
+    outline: none;
+
+    transition: transform 0.25s ease;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+.boton-menu:hover {
+    transform: translateY(-6px);
+}
+
+/* EFECTO AL HACER CLIC */
+.boton-menu:active {
+    transform: scale(0.95);
+}
+
+/* CUADRO DEL ICONO */
+.icono-cuadro {
+    width: 115px;
+    height: 115px;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* SOMBRA DIAGONAL INTERNA */
+.icono-cuadro::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: rgba(0, 0, 0, 0.18);
+    transform: rotate(35deg);
+    right: -60px;
+    bottom: -50px;
+}
+
+/* ICONO SVG */
+.icono-cuadro svg {
+    width: 68px;
+    height: 68px;
+    fill: white;
+    position: relative;
+    z-index: 2;
+}
+
+/* TEXTO DEBAJO DEL ICONO */
+.titulo-boton {
+    width: 100%;
+    margin-top: 16px;
+
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 1.1;
+   white-space: normal;
+
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.70);
+}
+
+/* COLOR DEL BOTÓN CONVERSACIONES */
+.icono-conversaciones {
+    background: linear-gradient(135deg, #d85f8a, #c9507c);
+}
+
+/* COLOR DEL BOTÓN MANTENIMIENTO */
+.icono-mantenimiento {
+    background: linear-gradient(135deg, #4e9af1, #2468b2);
+}
+
+/* COLOR DEL BOTÓN COMBUSTIBLE */
+.icono-combustible {
+    background: linear-gradient(135deg, #f5a623, #d97706);
+}
+
+/* COLOR DEL BOTÓN RENDIMIENTO DE ACEITE */
+.icono-aceite {
+    background: linear-gradient(135deg, #22c55e, #15803d);
+}
+
+/* COLOR DEL BOTÓN DATO FICHA */
+.icono-dato-ficha {
+    background: linear-gradient(135deg, #0ea5e9, #0369a1);
+}
+
+.icono-dato {
+    background: linear-gradient(135deg, #0f766e, #14b8a6);
+}

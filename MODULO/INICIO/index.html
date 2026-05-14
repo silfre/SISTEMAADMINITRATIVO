@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú Principal del Sistema</title>
+
+    <!-- Conectar CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor-botones">
+
+        <!-- BOTÓN CONVERSACIONES -->
+        <button type="button" class="boton-menu" onclick="abrirModulo('conversaciones')">
+            <div class="icono-cuadro icono-conversaciones">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20 2H4C2.9 2 2 2.9 2 4v11c0 1.1.9 2 2 2h3v4l5.3-4H20c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM7 7h10v2H7V7zm0 4h10v2H7v-2z"/>
+                </svg>
+            </div>
+
+            <div class="titulo-boton">Conversaciones</div>
+        </button>
+
+
+        <!-- BOTÓN MANTENIMIENTO -->
+        <button type="button" class="boton-menu" onclick="abrirModulo('mantenimiento')">
+            <div class="icono-cuadro icono-mantenimiento">
+                <svg viewBox="0 0 24 24">
+                    <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9C10.2 1.1 7.5.4 5 .9l4 4-4.2 4.2-4-4c-.5 2.5.2 5.2 2.1 7.1 1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.5.5-1.1.1-1.5z"/>
+                </svg>
+            </div>
+
+            <div class="titulo-boton">Mantenimiento</div>
+        </button>
+
+
+        <!-- BOTÓN COMBUSTIBLE -->
+        <button type="button" class="boton-menu" onclick="abrirModulo('combustible')">
+            <div class="icono-cuadro icono-combustible">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19.77 7.23l.01-.01-3-3-.01.01A.75.75 0 0 0 15.71 5.3l1.29 1.29V10c0 1.1.9 2 2 2h1v6.5a1.5 1.5 0 0 1-3 0V17c0-1.66-1.34-3-3-3h-1V4c0-1.1-.9-2-2-2H5C3.9 2 3 2.9 3 4v18h10v-6h1c.55 0 1 .45 1 1v1.5a3.5 3.5 0 0 0 7 0V9.36c0-.53-.21-1.04-.59-1.41l-1.64-1.72zM5 4h6v6H5V4zm6 16H5v-8h6v8zm8-10V8.59l1 1V10h-1z"/>
+                </svg>
+            </div>
+
+            <div class="titulo-boton">Combustible</div>
+        </button>
+
+
+                <!-- BOTÓN RENDIMIENTO DE ACEITE -->
+        <button type="button" class="boton-menu" onclick="abrirModulo('rendimientoAceite')">
+            <div class="icono-cuadro icono-aceite">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2C9 6 6 9.8 6 14a6 6 0 0 0 12 0c0-4.2-3-8-6-12zm0 18a4 4 0 0 1-4-4c0-2.5 1.6-5 4-8.4C14.4 11 16 13.5 16 16a4 4 0 0 1-4 4z"/>
+                    <path d="M13 14.5c0 1.4-1.1 2.5-2.5 2.5-.6 0-1-.4-1-1s.4-1 1-1c.3 0 .5-.2.5-.5 0-.6.4-1 1-1s1 .4 1 1z"/>
+                </svg>
+            </div>
+
+            <div class="titulo-boton">Rendimiento de Aceite</div>
+        </button>
+
+                    <!-- BOTÓN DATO FICHA -->
+            <button type="button" class="boton-menu" onclick="abrirModulo('datoFicha')">
+                <div class="icono-cuadro icono-dato-ficha">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 4v10h16V8H4zm2 2h6v2H6v-2zm0 4h10v2H6v-2zm11-4h2v2h-2v-2z"/>
+                    </svg>
+                </div>
+
+                <div class="titulo-boton">Dato Ficha</div>
+            </button>
+
+
+                        <!-- BOTÓN DATO -->
+            <button type="button" class="boton-menu" onclick="abrirModulo('dato')">
+                            <div class="icono-cuadro icono-dato">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M5 3h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zm0 4v12h14V7H5zm3 2h8v2H8V9zm0 4h8v2H8v-2zm0 4h5v2H8v-2z"/>
+                                </svg>
+                            </div>
+
+                <div class="titulo-boton">Dato</div>
+            </button>
+
+    </div>
+
+
+
+
+    <!-- Conectar JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>
